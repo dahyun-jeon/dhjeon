@@ -1,0 +1,121 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(240, 245, 245, 1);
+}
+header {
+  /*Height and Width*/
+  height: 8vh;
+  width: 95%;
+  /*display settings*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*font settings*/
+  font-size: 3vw;
+  font-family: 'Black Han Sans', sans-serif;
+  text-transform: uppercase;
+}
+.nav-bar {
+  /*Height and Width*/
+  width: 100%;
+  /*display settings*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .logo {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo .logo-image {
+  margin: 0px 5px 0px 0px;
+  height: 3vw;
+  width: 3vw;
+}
+.nav-bar .logo .name {
+  margin: 5px;
+}
+.nav-bar .nav-menu {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar .nav-menu div {
+  margin: 5px;
+}
+
+.contents {
+  /*Height and Width*/
+  height: 100%;
+  width: 90%;
+  max-width: 1000px;
+  /*display settings*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*font settings*/
+  font-size: 1rem;
+  font-family: 'Black Han Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.contents {
+  text-transform: none;
+}
+.contents .title {
+  margin: 4vw 0px 8vh 0px;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 6vw;
+}
+
+.contents section {
+  font-family: 'roboto';
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1200) {
+  body {
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 100vh;
+    width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(240, 245, 245, 1);
+  }
+  header {
+    /*Height and Width*/
+    height: 8vh;
+    width: 95%;
+    /*display settings*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*font settings*/
+    font-size: 36px;
+    font-family: 'Black Han Sans', sans-serif;
+    text-transform: uppercase;
+  }
+  .contents .title {
+    margin: 4vw 0px 8vh 0px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 72vw;
+  }
+}
